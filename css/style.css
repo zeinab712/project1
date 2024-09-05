@@ -1,0 +1,901 @@
+* {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'varela round', sans-serif;
+}
+/* ************** COMMON STYLES******************************************************************* */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+ .works-info-p , .courses-items{
+
+    color: rgb(103, 139, 127);
+}
+a{
+    text-decoration: none;
+}
+/* ------------------- HOME SECTION-------------------------------------------------------------- */
+.home{
+   background-image: url(../images/1.png);
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   position: relative;
+}
+.home-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-item-title{
+    font-size: 65px;
+    color: white;
+}
+.home-item-para{
+    color: rgb(214, 214, 214);
+    padding: 12px 0px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.home-item-btn{
+    padding: 15px 12px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 40px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(103, 139, 127);
+}
+.btn1{
+    background-color: white;
+    color: rgb(103, 139, 127);
+}
+.home-item-btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.home-header{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(103, 139, 127,0.7);
+    color: white;
+    overflow: auto;
+}
+.home-header-parent{
+    margin-top: 20px;
+    margin-left: 51%;
+}
+.home-logo{
+    width: 50px;
+    height: 55px;
+    margin-left: 150px;
+    float: left;
+}
+.home-header-list li {
+    list-style: none;
+    display:inline-block;
+    padding: 0 10px;
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif;
+}
+.home-header-list li a{
+    color: white;
+}
+/* ----------------------ABOUT SECTION---------------------------------- */
+.about{
+    height: 90vh;
+}
+.about-main-title{
+    margin-top: 140px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.about-main-title-underline{
+    width: 65px;
+    height: 4px;
+    margin: auto;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: 20px;
+}
+.about-main-parent{
+    height: 240px;
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+    overflow: auto;
+}
+.about-parent{
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(39, 60, 39) ;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+.about-middle-parent{
+    margin: 0 5%;
+}
+.about-item{
+    margin-top: 40px;
+    position: relative;
+}
+.about-item i{
+    font-size: 25px;
+    color:rgb(106, 161, 106) ;
+}
+.about-item-title{
+    padding:20px 0 ;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(29, 49, 42);
+}
+.about-item-para{
+    padding: 0 0 20px 0;
+    letter-spacing: 2px;
+    color:  rgb(103, 139, 127)
+}
+.about-item-link{
+    color:rgb(106, 161, 106) ;
+}
+.about-parent:before{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 49, 42);
+    opacity: 1;
+}
+.about-parent:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition:0.5s;
+}
+.about-parent:hover .about-item-title{
+    color: white;
+    transition: 1.5s;
+}
+.about-parent:hover .about-item-para{
+    color: rgb(201, 201, 201);
+    transition: 1s;
+}
+/* ------------------- GALLERY-------------------------------------------------------------- */
+.gallery-main{
+    height: 172vh;
+    background-color:rgb(221, 234, 230)
+}
+.gallery-main-title h2{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.gallery-main-title-underline{
+    width: 65px;
+    height: 4px;
+    margin: auto;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: -80px;
+}
+.gallery-section1{
+    width: 80%;
+    height: 370px;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center; 
+}
+.gallery-section2{
+    width: 80%;
+    height: 370px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;  
+}
+.gallery-item{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.middle{
+    margin: 0 5% ;
+}
+.gallery-img{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top:18.5px ;
+}
+.gallery-img img{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+.gallery-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(103, 139, 127,0);
+    opacity: 0;
+}
+.gallery-item:hover .gallery-overlay{
+    background-color: rgb(103, 139, 127,0.8);
+    opacity:1;
+    transition: 0.6s;
+}
+.gallery-overlay {
+    color: white;
+}
+.gallery-overlay-title{
+    padding: 130px 0 15px 0;
+    text-transform: uppercase;
+    color: rgb(39, 60, 39);
+}
+.gallery-item:hover p,h3,a{
+    transition: 0.2s;
+}
+.gallery-overlay-content{
+    font-size: 20px;
+    font-weight: bold; 
+}
+.gallery-overlay i {
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px;
+    background-color:rgb(39, 60, 39) ;
+    color: white;
+}
+/* ------------------- SERVICES-------------------------------------------------------------- */
+.services-main{
+    height: 97vh;
+    width: 100%;
+    overflow: auto;
+}
+.services-main-title h2{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.services-main-title-underline{
+    width: 65px;
+    height: 4px;
+    margin: auto;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: -80px;
+}
+.services-section1{
+    width: 80%;
+    height: 180px;
+    margin: auto;
+    margin-top: 50px;
+}
+.services-section2{
+    width: 80%;
+    height: 180px;
+    margin: auto;
+    margin-top: 20px;
+}
+.services-parent{
+    float: left;
+    width: 30%;
+    height: 100%;
+    border: 1px solid rgb(39, 60, 39) ;
+    position: relative;
+}
+.service-middle{
+    margin:0 5%;
+}
+.services-item{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+.services-item h2{
+    color: rgb(29, 49, 42);
+    display:inline-block;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.services-item p{
+    color:  rgb(103, 139, 127);
+    padding-left: 60px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+.services-item i::before{
+    color:rgb(106, 161, 106) ;
+    font-size: 30px;
+}
+.services-item i{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.services-text{
+    display: inline;
+}
+.services-parent:before{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 49, 42);
+    opacity: 1;
+}
+.services-parent:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition:0.5s;
+}
+.services-parent:hover .services-item h2{
+    color: white;
+    transition: 1.5s;
+}
+.services-parent:hover .services-item p{
+    color: rgb(201, 201, 201);
+    transition: 1s;
+}
+/*  ---------------------------------BLOG SECTION---------------------------------- --*/
+.blog-main{
+    
+    width: 100%;
+    height: 97vh;
+    background-color:rgb(221, 234, 230);
+    overflow: auto;
+}
+.blog-item{
+    margin-left: 150px;
+    float: left;
+}
+.blog-main-title h2{
+    padding: 138px 0 100px 0;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.blog-main-title-underline{
+    width: 65px;
+    height: 4px;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: -90px;
+}
+.blog-para{
+    font-size: 18px;
+    color:  rgb(103, 139, 127);
+    padding-top: 50px;
+}
+.blog-list1 ul li{
+    list-style: none;
+    color:  rgb(103, 139, 127);
+}
+.blog-list1 ul li i{
+    color:rgb(74, 174, 74) ;
+    font-size: 16px;
+    padding: 11px 0 ; 
+}
+.blog-list1{
+    margin-top: 15px;
+}
+.blog-img{ 
+    float: left;
+    width: 50%;
+}
+.blog-img img{
+    width:485px;
+    height: 400px;
+    margin-left: 22%;
+    margin-top: 16%;
+}
+.blog-img ul{
+    list-style: none;
+    padding-left: 180px;
+    text-align: center;
+}
+.blog-img ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 5px;
+    background-color: rgb(140, 173, 162);
+}
+.blog-img .blog-li{
+    background-color: rgb(29, 49, 42) ;
+}
+.blog-img li:hover{
+    background-color: rgb(29, 49, 42) ;
+}
+/* --------------------------------------------ACHIEVEMENTS SECTION------------------------------- */
+.achieve-main{
+    background-image: url(../images/1.png);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    background-attachment: fixed;
+    position: relative;
+}
+.achieve-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.achieve-main-parent{
+    width: 80%;
+    margin: auto;
+}
+.achieve-main-item{
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+    overflow: auto;
+}
+.achieve-item{
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 80px;
+}
+.achieve-item h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0 12px;
+}
+.achieve-item i{
+    color:rgb(106, 161, 106) ;
+    font-size: 30px;
+}
+.achieve-item h2, .achieve-item p {
+    color: white;
+}
+/* ---------------------------------------------------SHOP SECTION--------------------------------------------------------- */
+.shop-main{
+    width: 100%;
+    height: 109vh;
+    background-color:rgb(221, 234, 230);
+    overflow: auto;
+}
+.shop-main-title h2{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.shop-main-title-underline{
+    width: 65px;
+    height: 4px;
+    margin: auto;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: -80px;
+}
+.shop-main-parent{
+    height: 360px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+.shop-item{
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(39, 60, 39) ;
+    height: 100%;
+    width: 30%;
+    position: relative;  
+}
+.shop-middle-item{
+    margin: 0 5%;
+}
+.shop-item p , .shop-desc li{
+    color:  rgb(103, 139, 127);
+}
+.shop-desc li{
+    list-style: none;
+}
+.shop-item .shop-period ,.shop-item h3{
+    color: rgb(29, 49, 42);
+}
+.shop-item p{
+    padding: 35px 0 25px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.shop-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(106, 161, 106); 
+    margin: auto;
+}
+.shop-circle h3{
+    font-size: 50px;
+    font-weight: bold;
+    margin:16px 0;  
+}
+.shop-circle span {
+    font-weight: bold;
+    font-size: 15px;
+}
+.shop-desc{
+    margin-top: 25px;
+    text-transform: lowercase;
+    line-height: 29px;
+}
+.shop-btn{
+    width: 120px;
+    border: 2px solid rgb(106, 161, 106); 
+    padding: 4px;
+    margin-top: 15px;
+    color: rgb(29, 49, 42);
+}
+.shop-item:after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0%;
+    top: 0;
+    right: 0;  
+    background-color: rgb(103, 139, 127,0.8);
+    opacity: 0.5;
+}
+.shop-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition:0.5s;
+}
+.shop-item:hover p{
+    color: green;
+}
+.shop-item:hover h3 , .shop-item:hover span{
+    color: green;
+    transition: 1s;
+}
+/* -------------------------------------------------Excellence SECTION--------------------------------------- */
+.exce-main{
+    background-image: url(../images/background2.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    background-attachment: fixed;
+    position: relative;
+}
+.exce-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.exce-main-parent{
+    width: 70%;
+    margin-left: 290px;
+}
+.exce-item{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-top: 80px;
+}
+.upper-item p{
+    color:rgb(106, 161, 106) ;
+}
+.upper-item h3 , .lower-item p{
+    color: white;
+}
+.upper-item{
+    position: relative;
+}
+.upper-item img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%; 
+    position: absolute;
+    top: 50px;
+    left: -10px;
+}
+.upper-item h3 , .upper-item p{
+    display: block;
+    text-transform: lowercase;
+}
+ .upper-item p{
+    position: absolute;
+    top:90px ;
+    left: 80px;
+}
+.upper-item h3{
+    position: absolute;
+    top:65px ;
+    left: 80px;
+}
+.lower-item p{
+    position: absolute;
+    top:220px ;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 21px;
+}
+/* ---------------------------------------------------------WORKS SHOP SECTION--------------------------------------------------------------------------- */
+.works-main-title h2{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.works-main-title-underline{
+    width: 65px;
+    height: 4px;
+    margin: auto;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: -80px;
+}
+.title1{
+    font-size:54px ;
+    text-align: center;
+    text-transform: capitalize;
+}
+.div1{
+    width:100px ;
+    height:4px;
+    margin: auto;
+    margin-top: -30px;
+}
+.works-container{
+    width: 80%;
+    margin: auto;
+}
+.works-parent{
+  overflow: auto;
+  margin-top: 70px;
+  padding-left:70px ;
+}
+.works-item{
+    float:left;
+    width: 28%;
+    background-color:rgb(221, 234, 230);
+    text-align: center;
+    padding: 17px 13px;
+    position: relative;
+}
+.tt{
+    margin: 0 5%;
+}
+.works-img{ 
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+.works-img img{
+    width: 100%;
+}
+.works-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.works-item:hover .works-overlay{
+    visibility: visible;  
+}
+.works-overlay a{
+    display:block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(106, 161, 106);
+    color:white;
+    margin-left: auto;
+    transition: 0.001s;
+}
+.works-overlay a i {
+    line-height: 40px; 
+}
+.works-info-title{
+    color: rgb(29, 49, 42);
+    padding: 11px 0px;
+    font-size: 18px;
+    text-transform: lowercase;
+}
+.works-info-p{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.works-item:hover .works-info-title{
+  color: white;
+  transition: 0.5s;
+}
+.works-item:hover .works-info-p{
+    color:rgb(106, 161, 106);
+    transition: 0.5s;
+}
+.works-item:after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;  
+    background-color: rgb(103, 139, 127,0.8);
+    opacity: 0;
+}
+.works-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition:1s;
+}
+/* -----------------------------------------Latest Courses SECTION-------------------------------------------------------------------- */
+.courses-main-title h2{
+    padding: 140px 0 100px 0;
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(29, 49, 42);
+}
+.courses-main-title-underline{
+    width: 65px;
+    height: 4px;
+    margin: auto;
+    background-color:rgb(106, 161, 106) ;
+    margin-top: -80px;
+}
+.courses-main-parent {
+
+    height: 515px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+    background-color: rgb(221, 234, 230);
+}
+.main-items{
+    float: left;
+    padding-left: 25px;
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background-color: white; 
+}
+.courses-middle-item{
+    margin: 0 5%;
+}
+.courses-items{
+    overflow: auto;
+}
+.courses-items ul li{ 
+    list-style: none;
+    float: left;
+    font-size: 12px;
+    padding: 40px 0 30px;
+}
+.courses-items h3{
+   color: rgb(29, 49, 42);
+}
+.courses-items h3, .courses-items p, .courses-items a {
+    clear: both; 
+}
+.courses-items p{
+    padding: 30px 0 20px;
+    line-height: 24px;
+}
+.courses-items ul .li2{
+    margin:0 15px;
+}
+.courses-items ul li ,.courses-items a{
+    color: rgb(106, 161, 106);
+} 
+.courses-image{
+    width: 100%;
+    height: 49%;
+}
+.courses-image img{
+    width: 60%;
+    height: 100%;
+}
+.main-items:after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgb(103, 139, 127,0.8);
+    opacity: 0;
+}
+.main-items:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition:1s;
+}
+/* ------------------------------------------------ CONTACT SECTION------------------------------------------------------------------- */
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(103, 139, 127,0.8);
+}
+.footer img{
+    width: 160px;
+    height: 70px;
+    margin-top: 60px;
+}
+.footer-main-items{
+    margin: auto;
+    text-align: center;
+}
+.footer-icons{
+    overflow: auto;  
+}
+.footer-icons ul li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(221, 234, 230);
+    line-height: 400px; 
+    position: relative;
+    margin: 20px 0 20px;
+}
+.footer-icons ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-main-items p {
+    clear: both;
+    color: rgb(221, 234, 230);
+    font-size: 12px;
+}
+.footer-icons a{
+    height: 50px;
+    text-decoration: none;
+}
+.footer-icons ul li a i {
+    line-height: 50px;
+    font-size: 23px;
+    color: rgb(8, 60, 8);
+}
+.footer-icons ul li:hover{
+    opacity: 0.7;
+}
